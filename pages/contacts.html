@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/contacts.css">
+    <link rel="shortcut icon" href="../img/header/logo.png" type="image/x-icon">
+    <!--Regular-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <!--Light-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <!--Semi-bold-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <!--Font awesome-->
+    <script src="https://kit.fontawesome.com/38b8c69a75.js" crossorigin="anonymous"></script>
+    <title>Контакты</title>
+</head>
+<body>
+    <!--------------------------Меню для мобильных устройств--------------------------------->
+    <div class="mobile__menu">
+        <div class="container">
+            <div class="mobile__menu__inner">
+                <div class="mobile__nav__logo">
+                <div class="mobile__menu__cancel"><i class="fas fa-times" onclick="cancelMobileMenu()"></i></div>
+                <a href="../index.html" class="logo"><img src="../img/header/logo.png"></a>
+                <i class="far fa-phone"></i>
+            </div>
+            <div class="mobile__menu__nav">
+            <a href="#" class="nav__media__mobile">Компания</a>
+            <a href="#" class="nav__media__mobile">Услуги</a>
+            <a href="#" class="nav__media__mobile">Клиентам</a>
+            <a href="contacts.html" class="nav__media__mobile">Контакты</a>
+        </div>
+        <input type="text" class="input__search__mobile" placeholder="Искать..." id='test'>
+            </div>
+        </div>
+    </div>
+    <div class="body__inner">
+         <!--------------------------Header--------------------------------->
+         <header>
+            <div class="container">
+                <!--------------------------Навигация--------------------------------->
+                <nav class="nav">
+                    <div class="burger" onclick="openMobileMenu()"><img src="../img/header/mobile/burger.png"></div>
+                    <a href="../index.html" class="logo"><img src="../img/header/logo.png"></a>
+                    <a href="#" class="nav__media">Компания</a>
+                    <a href="#" class="nav__media">Услуги</a>
+                    <a href="#" class="nav__media">Клиентам</a>
+                    <a href="pages/contacts.html" class="nav__media">Контакты</a>
+                    <div class="nav__block">
+                        <i class="fas fa-search" id="search" onclick="onSearch()"></i>
+                        <input type="text" class="input__search">
+                        <div id="lang">
+                            <span class="cur__lang ru"><a href="#">RU</a></span> <i class="fas fa-chevron-down" onclick="onLangChange()"></i>
+                            <div id="langMenu" class="lang__menu">
+                                <span class="cur__lang eng"><a href="">ENG</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <div class="nav__line"></div>
+        </header>
+    
+        <!--------------------------Main--------------------------------->
+    
+        <main>
+            <img src="../img/bg/hex.png" class="bg__dec first__dec dec">
+            <img src="../img/bg/hex-1.png" class="bg__dec second__dec dec">
+            <img src="../img/bg/hex-2.png" class="bg__dec third__dec dec">
+            <img src="../img/bg/hex-3.png" class="bg__dec fourth__dec dec">
+    
+            <div class="container">
+                <!--------------------------Телефон--------------------------------->
+                <div class="phone">
+                    <h3 class="title">Связаться с нами</h3>
+                    <h5 class="subtitle">По номеру телефона</h5>
+                    <ul>
+                        <li>Единый многоканальный номер: <strong>+7 (495) 276-0211</strong> <br>
+                            (с 9:00 до 18:00 часов по московскому времени).</li>
+                        <li>По вопросам, связанным с ПАК ЗК ЕГР ЗАГС: <strong>+7 (495) 276-2325</strong> <br>
+                            (с 9:00 до 18:00 часов по московскому времени).</li>
+                        <li>По вопросам заключения и продления договоров с МФЦ: <strong>+7 (495) 276-0211</strong> <br>
+                            (с 9:00 до 18:00 часов по московскому времени).</li>
+                        <li>По вопросам заключения и продления договоров с ОРИ: <strong>+7 (495) 276-0211</strong> <br>
+                            (с 9:00 до 18:00 часов по московскому времени).</li>
+                    </ul>
+                </div>
+    
+                <!--------------------------Почта--------------------------------->
+                <div class="mail">
+                    <h5 class="subtitle">По электронной почте</h5>
+                    <ul>
+                        <li>Общие вопросы: <strong>info@elvis.ru</strong></li>
+                        <li>Продукты, услуги, решения: <strong>presale@elvis.ru</strong></li>
+                        <li>Техническая поддержка: <strong>support@elvis.ru</strong></li>
+                        <li>Трудоустройство: <strong>personal@elvis.ru</strong></li>
+                    </ul>
+                </div>
+
+                <!--------------------------Адрес--------------------------------->
+                <div class="adresses">
+                    <h5 class="subtitle">Наши адреса</h5>
+                    <ul>
+                        <li>Почтовый адрес: <strong>124460, Москва, Зеленоград, а/я 81.</strong></li>
+                        <li>Фактический адрес: <strong>124527, Москва, Зеленоград, Солнечная аллея, д. 6, помещение VI, офис 7.</strong></li>
+                    </ul>
+                </div>
+    
+                <!--------------------------Маршруты--------------------------------->
+                <div class="routes">
+                    <h5 class="subtitle">Варианты маршрута</h5>
+                    <ul>
+                        <li><strong>На личном транспорте:</strong> по Ленинградскому или Пятницкому шоссе до Зеленограда (см. карту).</li>
+                        <li><strong>С Ленинградского вокзала:</strong> электричкой до станции Крюково, далее автобусами №2, №3, №9, №11 до остановки «Солнечная аллея» (см. карту).</li>
+                        <li><strong>От метро «Речной вокзал»:</strong> автобусом №400 или маршрутными такси №431, №476 до остановки «Кинотеатр Электрон», далее перейти дорогу и с остановки автобусами №8, №11, №3 до остановки «Солнечная аллея» (см. карту).
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    
+        <!--------------------------Footer--------------------------------->
+    
+        <footer>
+            <hr>
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="phone__block">
+                        <p>+7 (495) 276-0211</p>
+                        <p>Звонок бесплатный</p>
+                    </div>
+                    <div class="copy__block">
+                        <p>© АО «ЭЛВИС-ПЛЮС»</p>
+                        <p>Все права защищены</p>
+                        <p>1991 - 2021</p>
+                    </div>
+                    <div class="social__block">
+                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="https://www.facebook.com/elvisplusrussia/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/ELVIS_PLUS" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.youtube.com/user/elvisplusvideo" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/header/logo.png" type="image/x-icon">
+    <!--Regular-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <!--Light-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <!--Semi-bold-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <!--Font awesome-->
+    <script src="https://kit.fontawesome.com/38b8c69a75.js" crossorigin="anonymous"></script>
+    <title>Главная</title>
+</head>
+<body class="index">
+    <!--------------------------Меню для мобильных устройств--------------------------------->
+    <div class="mobile__menu">
+        <div class="container">
+            <div class="mobile__menu__inner">
+                <div class="mobile__nav__logo">
+                <div class="mobile__menu__cancel"><i class="fas fa-times" onclick="cancelMobileMenu()"></i></div>
+                <a href="index.html" class="logo"><img src="img/header/logo.png"></a>
+                <i class="far fa-phone"></i>
+            </div>
+            <div class="mobile__menu__nav">
+            <a href="#" class="nav__media__mobile">Компания</a>
+            <a href="#" class="nav__media__mobile">Услуги</a>
+            <a href="#" class="nav__media__mobile">Клиентам</a>
+            <a href="pages/contacts.html" class="nav__media__mobile">Контакты</a>
+        </div>
+        <input type="text" class="input__search__mobile" placeholder="Искать..." id='test'>
+            </div>
+        </div>
+    </div>
+    <div class="body__inner">
+        <!--------------------------Header--------------------------------->
+        <header>
+            <div class="container">
+                <!--------------------------Навигация--------------------------------->
+                <nav class="nav">
+                    <div class="burger" onclick="openMobileMenu()"><img src="img/header/mobile/burger.png"></div>
+                    <a href="index.html" class="logo"><img src="img/header/logo.png"></a>
+                    <a href="#" class="nav__media">Компания</a>
+                    <a href="#" class="nav__media">Услуги</a>
+                    <a href="#" class="nav__media">Клиентам</a>
+                    <a href="pages/contacts.html" class="nav__media">Контакты</a>
+                    <div class="nav__block">
+                        <i class="fas fa-search" id="search" onclick="onSearch()"></i>
+                        <input type="text" class="input__search">
+                        <div id="lang">
+                            <span class="cur__lang ru"><a href="">RU</a></span> <i class="fas fa-chevron-down" onclick="onLangChange()"></i>
+                            <div id="langMenu" class="lang__menu">
+                                <span class="cur__lang eng"><a href="">ENG</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <div class="nav__line"></div>
+                <!--------------------------Слайдер--------------------------------->
+                <div class="slider" id="slider-1">
+                    <div class="slider__wrapper">
+                      <div class="slider__items">
+                        <div class="slider__item">
+                          <img src="img/header/slider/1.png">
+                        </div>
+                        <div class="slider__item">
+                            <img src="img/header/slider/2.png">
+                        </div>
+                        <div class="slider__item">
+                            <img src="img/header/slider/3.png">
+                        </div>
+                      </div>
+                    </div>
+                    <!--------------------------Стрелки слайдера--------------------------------->
+                    <a class="slider__control slider__control_prev" href="#" role="button" data-slide="prev"></a>
+                    <a class="slider__control slider__control_next" href="#" role="button" data-slide="next"></a>
+                  </div>
+            </div>
+        </header>
+        
+        <!--------------------------Main--------------------------------->
+    
+        <main>
+            <!--------------------------Услуги--------------------------------->
+            <div class="container">
+                <h3 class="title">Наши услуги</h3>
+                <div class="service">
+                    <div class="service__block">
+                        <div class="service__img"><img src="img/main/services/gears__img.png"></div>
+                        <div class="service__text">Реализация крупномасштабных интеграционных проектов по созданию ЗИС</div>
+                        <div class="service__line"></div>
+                    </div>
+        
+                    <div class="service__block">
+                        <div class="service__img"><img src="img/main/services/dialogue__img.png"></div>
+                        <div class="service__text">Консалтинг в области построения защищённых информационных систем</div>
+                        <div class="service__line"></div>
+                    </div>
+    
+                    <div class="service__block">
+                        <div class="service__img"><img src="img/main/services/wrench__img.png"></div>
+                        <div class="service__text">Разработка интеграционных решений по созданию и поддержке ЗИС для любых организаций</div>
+                        <div class="service__line"></div>
+                    </div>
+        
+                </div>
+    
+                <!--------------------------Партнёры--------------------------------->
+    
+                <h3 class="title">Наши партнёры</h3>
+                <div class="partners">
+                    <div class="partners__block">
+                        <div class="partners__img"><a href="https://www.avanpost.ru/" target="_blank"><img src="img/main/partners/avanpost__logo.png"></a></div>
+                        <div class="partners__text"> Система аутентификации сотрудников в корпоративных ресурсах организации</div>
+                        <div class="partners__line"></div>
+                    </div>
+    
+                    <div class="partners__block">
+                        <div class="partners__img"><a href="https://ideco.ru/" target="_blank"><img src="img/main/partners/ideco__logo.png"></a></div>
+                        <div class="partners__text">Российский производитель программных продуктов для фильтрации трафика</div>
+                        <div class="partners__line"></div>
+                    </div>
+    
+                    <div class="partners__block">
+                        <div class="partners__img"><a href="https://www.aq.ru/" target="_blank"><img src="img/main/partners/aquarius__logo.png"></a></div>
+                        <div class="partners__text">Ведущий производитель компьютерной техники и ИТ-решений для гос. заказчиков</div>
+                        <div class="partners__line"></div>
+                    </div>
+    
+                    <div class="partners__block">
+                        <div class="partners__img"><a href="https://www.altx-soft.ru/" target="_blank"><img src="img/main/partners/altex__logo.png"></a></div>
+                        <div class="partners__text">Российский разработчик решений в области информационной безопасности</div>
+                        <div class="partners__line"></div>
+                    </div>
+    
+                    <div class="partners__block">
+                        <div class="partners__img"><a href="https://www.kaspersky.ru/" target="_blank"><img src="img/main/partners/kaspersky__logo.png"></a></div>
+                        <div class="partners__text">Крупнейший российский производитель систем защиты от вирусов и спама</div>
+                        <div class="partners__line"></div>
+                    </div>
+    
+                    <div class="partners__block">
+                        <div class="partners__img"><a href="https://www.drweb.ru/" target="_blank"><img src="img/main/partners/drweb__logo.png"></a></div>
+                        <div class="partners__text">Российский производитель антивирусных средств защиты информации</div>
+                        <div class="partners__line"></div>
+                    </div>
+                </div>
+    
+                <!--------------------------Проекты--------------------------------->
+    
+                <h3 class="title">Выполненные проекты</h3>
+                <div class="projects">
+                    <div class="projects__block">
+                        <div class="projects__img"><a href="https://www.renins.ru/" target="_blank"><img src="img/main/projects/reness__logo.png"></a></div>
+                        <div class="projects__text">Проектирование системы защиты песрональных данных</div>
+                        <div class="projects__line"></div>
+                    </div>
+        
+                    <div class="projects__block">
+                        <div class="projects__img"><a href="https://moskva.mts.ru/personal" target="_blank"><img src="img/main/projects/mts__logo.png"></a></div>
+                        <div class="projects__text">Поставка средств двухфакторной аутентификации</div>
+                        <div class="projects__line"></div>
+                    </div>
+        
+                    <div class="projects__block">
+                        <div class="projects__img"><a href="https://www.rzd.ru/" target="_blank"><img src="img/main/projects/rzhd__logo.png"></a></div>
+                        <div class="projects__text">Техническое проектирование средств защиты АСУТ</div>
+                        <div class="projects__line"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    
+        <!--------------------------Footer--------------------------------->
+    
+        <footer>
+            <hr>
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="phone__block">
+                        <p>+7 (495) 276-0211</p>
+                        <p>Звонок бесплатный</p>
+                    </div>
+                    <div class="copy__block">
+                        <p>© АО «ЭЛВИС-ПЛЮС»</p>
+                        <p>Все права защищены</p>
+                        <p>1991 - 2021</p>
+                    </div>
+                    <div class="social__block">
+                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="https://www.facebook.com/elvisplusrussia/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/ELVIS_PLUS" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.youtube.com/user/elvisplusvideo" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/slider.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
